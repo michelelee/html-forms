@@ -40,39 +40,45 @@
 
 <p> Place your orders HERE!!! You know you want to! </p>
 
-<form>
+<form action="https://ubermelon-order-form.herokuapp.com/process" method="get">
     <label for="field-firstname">First Name:</label>
-    <input type="text" name="firstname" id="field-firstname">
-</form>
-<form>
+    <input type="text" name="firstname" id="field-firstname"><br>
+
     <label for="field-lastname">Last Name:</label>
-    <input type="text" name="lastname" id="field-lasttname">
-</form>
-<form>
+    <input type="text" name="lastname" id="field-lasttname"><br>
+
     Melon type:
     <select name:"melontype">
         <option value="Watermelon">Watermelon</option>
-        <option value="Honeydew">Honeydew</option>
+        <option value="Honeydew">Honeydew</option> 
         <option value="Canteloupe">Canteloupe</option>
         <option value="Crenshaw">Crenshaw</option>
         <option value="Canary">Canary</option>
-    </select>
-</form>
-<form>
-    <label for="field-quanity">Quanity*:</label>
-    <input type="text" name="quanity" id="quanity">
-</form>
+    </select><br>
 
-<form>
+    <label for="field-quanity">Quanity*:</label>
+    <input type="text" name="quanity" id="quanity"><br>
+
     Delivery Time:
     <input type="radio" name="time" value="12:00am-12:00pm"> 12:00am-12:00pm
     <input type="radio" name="time" value="12:00pm-12:00am"> 12:00pm-12:00am
-    <input type="radio" name="time" value="Time is an illusion!"> Time is an Illusion!
-</form>
-<form>
+    <input type="radio" name="time" value="Time is an illusion!"> Time is an Illusion!<br>
+
     Returning Customer?
     <input type="radio" name="returing customer" value="yes">yes
-    <input type="radio" name="returing customer" value="no">no
+    <input type="radio" name="returing customer" value="no">no<br>
+
+    For Statical Purposes: 
+    <input type="checkbox" name="animal" value="Dog">Dog
+    <input type="checkbox" name="animal" value="Cat">Cat
+    <input type="checkbox" name="animal" value="Hedgehog">Hedgehog
+    <input type="checkbox" name="animal" value="Balloonicorn">Balloonicorn
+    <input type="checkbox" name="animal" value="Yak">Yak<br>
+
+
+
+    <input type="submit"> <br>
+    *Quantities given are by the flat.
 </form>
 
 </body>
